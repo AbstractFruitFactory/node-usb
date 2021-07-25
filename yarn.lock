@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@aleworm/bindings@^1.5.9":
-  version "1.5.9"
-  resolved "https://registry.yarnpkg.com/@aleworm/bindings/-/bindings-1.5.9.tgz#a78cc7d52807833b1d427b64a3c1fc7fb312449c"
-  integrity sha512-sNQkExY7jy9xe+Np6uacYquyFN6bpKSKCYH77Pwig4AIC0c8hcwvcNbRZ5qMdQNPeRx3M0FK7T8NqKUCpLuARQ==
+"@aleworm/bindings@^1.5.10":
+  version "1.5.10"
+  resolved "https://registry.yarnpkg.com/@aleworm/bindings/-/bindings-1.5.10.tgz#5a5015a0a9b16720acdb5a3fa3016e04dd5f4403"
+  integrity sha512-8sgb58LFtCuprZhTRu2GWz4CDALoIANK0pRiUrpbUI6IX+WqmIcqnya4MJeRqNEKFLWMognH0BuJcrsFjS7sQQ==
   dependencies:
     file-uri-to-path "1.0.0"
 
@@ -1183,7 +1183,7 @@ next-tick@~1.0.0:
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
   integrity sha1-yobR/ogoFpsBICCOPchCS524NCw=
 
-node-abi@^2.19.3, node-abi@^2.2.0, node-abi@^2.7.0:
+node-abi@^2.19.1, node-abi@^2.19.3, node-abi@^2.2.0, node-abi@^2.7.0:
   version "2.30.0"
   resolved "https://registry.yarnpkg.com/node-abi/-/node-abi-2.30.0.tgz#8be53bf3e7945a34eea10e0fc9a5982776cf550b"
   integrity sha512-g6bZh3YCKQRdwuO/tSZZYJAw622SjsRfJ2X0Iy4sSOHZ34/sPPdVBn8fev2tj7njzLwuqPw9uMtGsGkO5kIQvg==
@@ -1263,6 +1263,13 @@ npm-path@^2.0.2:
   integrity sha512-IFsj0R9C7ZdR5cP+ET342q77uSRdtWOlWpih5eC+lu29tIDbNEgDbzgVJ5UFvYHWhxDZ5TFkJafFioO0pPQjCw==
   dependencies:
     which "^1.2.10"
+
+npm-run-path@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/npm-run-path/-/npm-run-path-3.1.0.tgz#7f91be317f6a466efed3c9f2980ad8a4ee8b0fa5"
+  integrity sha512-Dbl4A/VfiVGLgQv29URL9xshU8XDY1GeLy+fsaZ1AA8JDSfjvr5P5+pzRbWqRSBxk6/DW7MIh8lTM/PaGnP2kg==
+  dependencies:
+    path-key "^3.0.0"
 
 npm-which@^3.0.1:
   version "3.0.1"
@@ -1398,6 +1405,11 @@ path-is-absolute@^1.0.0:
   resolved "https://registry.yarnpkg.com/path-is-absolute/-/path-is-absolute-1.0.1.tgz#174b9268735534ffbc7ace6bf53a5a9e1b5c5f5f"
   integrity sha1-F0uSaHNVNP+8es5r9TpanhtcX18=
 
+path-key@^3.0.0:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/path-key/-/path-key-3.1.1.tgz#581f6ade658cbba65a0d3380de7753295054f375"
+  integrity sha512-ojmeN0qd+y0jszEtoY48r0Peq5dwMEkIlCOu6Q5f41lfkswXuKtYrhgoTpLnyIcHm24Uhqx+5Tqm2InSwLhE6Q==
+
 performance-now@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
@@ -1454,6 +1466,19 @@ prebuild@^10.0.1:
     rc "^1.0.3"
     run-waterfall "^1.1.6"
     tar-stream "^2.1.0"
+
+prebuildify@^4.1.2:
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/prebuildify/-/prebuildify-4.1.2.tgz#b4eec5d9aa01d291d0be4a93fafeec62dfdda514"
+  integrity sha512-KEICWdLcz37OAVXcyf/h3y4FbUG/tUF+C7y/CJzHp6lZA1+T/obLLThd7w5vQHf1tr31CNDI34wKZUVT0hL2vw==
+  dependencies:
+    execspawn "^1.0.1"
+    minimist "^1.2.5"
+    mkdirp-classic "^0.5.3"
+    node-abi "^2.19.1"
+    npm-run-path "^3.1.0"
+    pump "^3.0.0"
+    tar-fs "^2.1.0"
 
 process-nextick-args@~1.0.6:
   version "1.0.7"
@@ -1810,7 +1835,7 @@ supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
-tar-fs@^2.0.0:
+tar-fs@^2.0.0, tar-fs@^2.1.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/tar-fs/-/tar-fs-2.1.1.tgz#489a15ab85f1f0befabb370b7de4f9eb5cbe8784"
   integrity sha512-V0r2Y9scmbDRLCNex/+hYzvp/zyYjvFbHPNgVTKfQvVrb6guiE/fxP+XblDNR011utopbkex2nM4dHNV6GDsng==

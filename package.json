@@ -1,7 +1,7 @@
 {
-  "name": "@aleworm/usb2",
+  "name": "@aleworm/usb",
   "description": "Library to access USB devices",
-  "version": "1.7.10",
+  "version": "1.7.15",
   "engines": {
     "node": ">=6"
   },
@@ -32,10 +32,10 @@
   "main": "./usb",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tessel/node-usb.git"
+    "url": "https://github.com/AbstractFruitFactory/node-usb.git"
   },
   "scripts": {
-    "install": "prebuild-install --runtime napi -d https://github.com/tessel/node-usb/releases/download/v1.7.1/usb-v1.7.1-napi-v4-linux-x64.tar.gz --target 4 --verbose || node-gyp rebuild",
+    "install": "prebuild-install --runtime napi --target 4 --verbose || node-gyp rebuild",
     "prebuild": "prebuild --runtime napi --target 4 --force --strip --verbose",
     "test": "mocha --require coffeescript/register --grep Module test/*",
     "full-test": "mocha --require coffeescript/register test/*",
@@ -44,7 +44,8 @@
   "dependencies": {
     "@aleworm/bindings": "^1.5.9",
     "node-addon-api": "3.0.2",
-    "prebuild-install": "^5.3.3"
+    "prebuild-install": "^5.3.3",
+    "prebuildify": "^4.1.2"
   },
   "devDependencies": {
     "coffeescript": "~2.4.1",
